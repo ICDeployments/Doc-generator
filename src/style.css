@@ -1,0 +1,274 @@
+
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+/* Profile Dropdown Styles */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e9ecef;
+}
+
+
+/* Main Content Styles */
+.main-content-login {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    height: 585px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.left-panel {
+    display: flex;
+      flex: 2;
+    flex-direction: column;
+    padding: 40px 60px;
+}
+
+.right-panel {
+    flex: 2.5; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+
+.start-journey {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 7px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #495057;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #61f505;
+    outline:#61f505;
+}
+
+.signup-btn,
+.signin-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #000048;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 15px;
+}
+
+.signup-btn:hover,
+.signin-btn:hover {
+    background-color: #36ef11;
+}
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.divider p {
+    background-color: white;
+    padding: 0 10px;
+    display: inline-block;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e9ecef;
+    z-index: -1;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #0684f2;
+
+}
+
+.login-link a {
+    color: #000048;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+    margin-left: 7px;
+    letter-spacing: 1px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+.right-bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling for the Label (if not already styled by .input-group label) */
+.input-group label[for="country"] {
+    display: block;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+    margin-left: 46%;
+   color: #495057;
+    font-size: 14px;
+}
+
+/* Styling for the Select Dropdown */
+.input-group select {
+    width: 40%;
+    margin-left: 32%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding/border don't increase the element's total width */
+    font-size: 16px;
+     color: #495057;
+    cursor: pointer;
+    margin-bottom: 28px;
+    
+    /* 1. Remove default browser styling for a custom look */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* 2. Add a custom arrow icon using background image */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M6%209l-4-4h8l-4%204z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    /* Position the arrow on the right side */
+    background-position: right 10px center;
+    background-size: 12px;
+    /* Add padding so the text doesn't overlap the arrow */
+    padding-right: 30px; 
+
+    transition: border-color 0.3s;
+}
+
+/* Focus State */
+.input-group select:focus {
+    border-color: #007bff; /* Highlight on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}

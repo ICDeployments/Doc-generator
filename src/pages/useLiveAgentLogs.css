@@ -1,0 +1,30 @@
+.ai-header-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.progress-fill-sidebar {
+  background-color: rgb(9, 244, 29);
+}
+
+/* Styling for the filename part */
+.process-stream-filename {
+  font-size: 0.8em;
+  color: #03ec49; /* Example: A darker grey color */
+}
+
+/* Styling for the static label part */
+.process-stream-label {
+  color: whitesmoke; /* Example: A bright blue color */
+  font-family: roboto;
+  font-size: 0.85em; /* Example: The base font size */
+  font-weight: bold;
+}
+
+.live-log-stream {
+  border-radius: 5px;
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding-top: 5px 5px;
+}

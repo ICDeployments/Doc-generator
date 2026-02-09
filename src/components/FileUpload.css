@@ -1,0 +1,241 @@
+.file-upload-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: -8vh;
+}
+ 
+.upload-box {
+  /* background: #f8f9fb; */
+  background-color: #500bd838;
+  border: 2px solid #000048;
+  border-radius: 12px;
+  width: 32vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+  /* background-color: #d9d9d926; */
+}
+ 
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+ 
+.upload-content {
+  text-align: center;
+  z-index: 1;
+}
+ 
+.main-text {
+  color: #8a8b90;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+ 
+.support-text {
+  color: #7b7f91;
+  font-size: 12px;
+}
+ 
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ddd;
+  border-top: 3px solid #4051b5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+ 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ 
+.success-icon, .error-icon {
+  width: 32px;
+  height: 32px;
+  color: #2ebd8c;
+  margin: 0 auto 8px;
+}
+ 
+.check-icon {
+  stroke: #2ebd8c;
+  width: 32px;
+  height: 32px;
+}
+ 
+.error-icon {
+  stroke: #e74c3c;
+  width: 32px;
+  height: 32px;
+}
+ 
+.default-icon {
+  stroke: #3d3f4c;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 8px;
+}
+ 
+.upload-text, .success-text, .error-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: greenrey;
+}
+ 
+.file-name {
+  font-size: 12px;
+  color: #7b7f91;
+  /* margin-top: 4px; */
+}
+ 
+.reset-button {
+  margin-top: 12px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #4051b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+ 
+.reset-button:hover {
+  background-color: #2e3fa1;
+}
+ 
+.upload-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  width: 100%;
+  padding: 0 14px;
+}
+ 
+.support-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+ 
+.left-info {
+  text-align: left;
+}
+ 
+.right-info {
+  text-align: right;
+
+}
+ 
+.upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  width:348px;
+  margin-top: -30px;
+  margin-left: -8vw;
+}
+
+@keyframes blink {
+  0% { 
+    color: #07172f; /* Original Dark Blue */
+  }
+  50% { 
+    color: #ff0000; /* Bright Red (Alternative Color) */
+  }
+  100% { 
+    color: #07172f; /* Back to Dark Blue */
+  }
+}
+
+.upload-label{
+   padding: 6px 0px;
+   margin-bottom: 5px;
+   margin-left: 10vw;
+  /* font-weight: 700; */
+  color: #07172f;
+  font-size: 18px;
+  font-weight: 500;
+   /* animation: blink 3s infinite alternate; */
+    animation: blink 2s infinite alternate ease-in-out; 
+}
+
+.logo-img-f {
+  width: 32px;
+  height: 32px;
+}
+
+.reset-upload{
+  margin-top: 12px 5px;
+  /* padding: 6px 10px; */
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #000048;
+  color: white;
+  border: 1px solid #01082f;
+  border-radius: 6px;
+  cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* .main-sar-title {
+  width: 100%;
+  text-align: center;
+  font-size: 25px; 
+  font-weight: 500;
+  color:  #000048;       
+  margin: 30px 0 25px 19.5vw;
+  align-self: flex-start;
+  font-family: 'Merriweather', serif;
+  font-variant: small-caps;
+} */
+
+.main-sar-title {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #000048, #0044cc, #00c6ff);
+  background-size: 200% auto;
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  margin: 28px 0 22px 15vw;
+   align-self: flex-start;
+  font-family: 'Merriweather', serif;
+  font-variant: small-caps;
+}
+ 
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+ 
+.response-text {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.file-names{
+  position: relative;
+  right: 10px;
+}
+ 

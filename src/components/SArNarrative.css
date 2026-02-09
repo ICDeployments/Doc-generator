@@ -1,0 +1,190 @@
+ 
+.sar-narrative-container {
+  width: 100%;
+}
+ 
+ 
+.sar-narrative-box {
+ background-color:#500bd838;
+  border-radius: 12px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  padding: 20px;
+  font-size: 16px;
+  width: 70vw;
+  max-height: 82vh;
+  height: 82vh;
+  overflow-y: auto;
+  border: 2px solid #000048;
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.sar-narrative-actions{
+  margin-left: 18vw;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  /* border-top: 1px solid #ddd; */
+}
+
+.sar-narrative-actions button {
+  border: none;
+  background: none;
+  /* background: #f5f5f5; */
+  padding: 12px 3px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+
+.sar-narrative-actions img {
+  height: 24px;
+} 
+
+button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+textarea {
+  flex: 1;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  outline: none;
+  overflow: visible;
+  padding: 0.5rem;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.narrative-editable {
+  width: 100%;
+  min-height: 100%;       /* ✅ fills parent height */
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Courier New', monospace; 
+  font-size: 1rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+ 
+  white-space: pre-wrap;  /* ✅ preserve newlines */
+  word-break: break-word; /* ✅ wrap long words */
+}
+
+.narrative-editable strong {
+  font-weight: 700;
+}
+
+.approve-btn {
+
+  color: #137333;
+  font-weight: 600;
+  margin-right: 5px; 
+}
+ 
+.reject-btn {
+ 
+  color: #b00020;
+  font-weight: 600;
+  margin-right: 5px;
+
+}
+
+.default_text {
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #000048; /* deep navy */
+  margin-bottom: 10px;
+}
+
+
+
+.sar-narrative-actions{
+  margin-top: 5px;
+  margin-left: -8vw;
+  display: flex;
+  align-items: center;
+  /* Crucial change: push groups to the extreme ends */
+  justify-content: space-around; 
+  /* Removed 'gap' from here as children are now groups */
+}
+
+/* New Flex containers for the left and right groups to manage inner spacing */
+.action-group-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between buttons within the group */
+}
+
+.action-group-right{
+   display: flex;
+    gap: 10px;
+    margin-left: 20vw;
+}
+
+.sar-narrative-actions button {
+  /* border: none; */
+  background: none;
+  padding: 12px 3px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 2px; */
+}
+
+.sar-narrative-actions img {
+  height: 26px;
+}
+
+button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Existing styles below (cleaned up conflicting margins for approve/reject) */
+
+.approve-btn {
+  color: #18e70a;
+  font-weight: 600;
+   border: 2px solid #1af80a !important; 
+  padding: 4px 14px !important; /* Adjusted padding to look better with a border */
+}
+
+.reject-btn {
+  color: #f70404;
+  font-weight: 600;
+  border: 2px solid #f10732 !important;
+  padding: 4px 18px !important; /* Adjusted padding to look better with a border */
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; } /* Text disappears */
+  100% { opacity: 1; } /* Text reappears */
+}
+
+.uploaded-files-info{
+  letter-spacing: 1.5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: -1px;
+  color: #fc0404;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+ 

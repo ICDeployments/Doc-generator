@@ -1,0 +1,106 @@
+.description-box{
+  background-color: #500bd838;
+  border: 2px solid #000048;
+  border-radius: 12px;
+  padding: 5px 18px; /* slightly reduced top padding */
+  /* margin-top: 7.5vh; */
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+  overflow-y: auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  line-height: 1; /* improved readability */
+  width: 50vw;
+  height: 35vh;
+}
+
+/* .description-box h3, */
+.description-box h4,
+.description-box h6, 
+.description-box p{ 
+  margin: 12px; /* reduced margin for better spacing */
+  padding: 0;
+}
+
+.description-box h4,
+.description-box p{
+  margin-top: 10px;
+  color: #000048;
+  font-family: 'Courier New', Courier, monospace;
+  /* margin-bottom: 6px; */
+}
+
+.agent-description{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  letter-spacing: 2.5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000048; /* deep navy */
+  margin-bottom: 10px;
+  animation: blink 2s infinite alternate ease-in-out; 
+}
+
+.progress-container {
+  width: 97%;
+  height: 30px;
+  /* background-color: #eb1313; */
+  border-radius: 8px;
+  border: 2px solid #000048;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.progress-bar {
+  height: 100%;
+  /* background-color: #35f23b;  */
+  background-color: #3bf811;
+  /* padding: 0.5px 1px; */
+  transition: width 1s ease-in-out;
+  position: relative;
+  border-radius: 6px;
+
+  
+}
+
+.progress-text {
+  position: absolute;
+  right: 5px; /* small padding from the edge of the bar */
+  top: 50%;
+  transform: translateY(-50%);
+  /* color: rgb(61, 68, 69); */
+  color: rgb(249, 8, 8);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logs-container{
+  border: 1px solid #8b909a;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+  background-color: #500bd838;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.text{
+  /* color: #061f07; */
+  /* margin-left: 25px; */
+  font-weight: 500;
+}
+
+.status-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+ 
+.status-buttons label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+ 
